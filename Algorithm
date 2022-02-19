@@ -24,9 +24,9 @@ fault: garbage can is already filled
 
 {collect the garbage can ID and the number from the options of the question}
 
-DATA UPDATAETION WHENEVER QR CODE SCANNED(PART 2):
+DATA UPDATION WHENEVER QR CODE SCANNED(PART 2):
 1. add the number from the option into the percentage column of the perecentage table
-3. add 1 to the fault column if fault option is chosen
+2. add 1 to the fault column if fault option is chosen
 
 
 SENDING INFORMATION TO MUNICIPAL CORPORATION:
