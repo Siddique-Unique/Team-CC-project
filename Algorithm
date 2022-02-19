@@ -2,8 +2,9 @@ CREATION OF DATABASE:
 
 1. Create Database for all garbage can with this QR code and create a table for it along with User ID column.
 2. Create a new User ID for Every New User account and create a table for it along with Date.
+3. Create a percentage table  for garbage can and a column with title as percentage and a column with title as fault. 
 
-DATA UPDATION WHENEVER QR CODE SCANNED:
+DATA UPDATION WHENEVER QR CODE SCANNED(PART 1):
 
 1. Collect garbage can ID from the QR code.
 2. Collect User ID from the application.
@@ -11,13 +12,38 @@ DATA UPDATION WHENEVER QR CODE SCANNED:
 4. Insert user ID in the garbage can table
 5. Insert today's data and garbage can ID in the USER table.
 
-REWARD SYSTEM:
+ASK QUESTION:
 
+1. What is the percentage of garbage can filled after you have dumped the garbage according to you?
+option:
+
+0) less than or equal to 50%
+1) between 50% and 100%
+2) 100%
+fault: garbage can is already filled
+
+{collect the garbage can ID and the number from the options of the question}
+
+DATA UPDATAETION WHENEVER QR CODE SCANNED(PART 2):
+1. add the number from the option into the percentage column of the perecentage table
+3. add 1 to the fault column if fault option is chosen
+
+
+SENDING INFORMATION TO MUNICIPAL CORPORATION:
+
+CASES:
+1. WHEN the percentage column is greater than 2 send information to the municipal corporation that the garbage can is filled.
+2. WHEN the fault column is greater than or equal to 1 reduce the daily reward by 5 and weekly reward by 20
+
+
+REWARD SYSTEM:
+Daily reward
 1. when time == 00:00:00
 for a garbage can ID
 generate a random number and match this number to user ID present with respect to garbage can ID.
 allot 20 CC coins to this user ID and delete all user ID present in the garbage can table with respect to this garbage can ID.
 
+Weekly reward
 2. when time == 00:00:00 and day == sunday
 for a user ID 
 if past 6 dates are present in the user ID 
