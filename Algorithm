@@ -8,7 +8,7 @@ DATA UPDATION WHENEVER QR CODE SCANNED(PART 1):
 
 1. Collect garbage can ID from the QR code.
 2. Collect User ID from the application.
-3. IF garbage can ID is present in the garbage can table then proceed further or show not the correct QR code.
+3. If garbage can ID is present in the garbage can table then proceed further or show not the correct QR code.
 4. Insert user ID in the garbage can table
 5. Insert today's data and garbage can ID in the USER table.
 
