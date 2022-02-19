@@ -1,0 +1,24 @@
+CREATION OF DATABASE:
+
+1. Create Database for all garbage can with this QR code and create a table for it along with User ID column.
+2. Create a new User ID for Every New User account and create a table for it along with Date.
+
+DATA UPDATION WHENEVER QR CODE SCANNED:
+
+1. Collect garbage can ID from the QR code.
+2. Collect User ID from the application.
+3. IF garbage can ID is present in the garbage can table then proceed further or show not the correct QR code.
+4. Insert user ID in the garbage can table
+5. Insert today's data and garbage can ID in the USER table.
+
+REWARD SYSTEM:
+
+1. when time == 00:00:00
+for a garbage can ID
+generate a random number and match this number to user ID present with respect to garbage can ID.
+allot 20 CC coins to this user ID and delete all user ID present in the garbage can table with respect to this garbage can ID.
+
+2. when time == 00:00:00 and day == sunday
+for a user ID 
+if past 6 dates are present in the user ID 
+allot 100 CC coins to this user ID and delete all the dates.
