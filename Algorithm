@@ -33,8 +33,8 @@ SENDING INFORMATION TO MUNICIPAL CORPORATION:
 
 CASES:
 1. WHEN the 100% percentage column is greater than 1 send information to the municipal corporation that the garbage can is filled.
-3. WHEN the less than 50, between 50 and 100 and 100 are greater than or equal to 1 then send the garbage can filled info to the municipal corporation.
-2. WHEN the fault column is greater than or equal to 1 reduce the daily reward by 5 and weekly reward by 20
+2. WHEN the less than 50, between 50 and 100 and 100 are greater than or equal to 1 then send the garbage can filled info to the municipal corporation.
+3. WHEN the fault column is greater than or equal to 1 reduce the daily reward by 5 and weekly reward by 20
 
 
 REWARD SYSTEM:
