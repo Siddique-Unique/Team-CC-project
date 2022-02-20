@@ -39,7 +39,7 @@ CASES:
 
 REWARD SYSTEM:
 Daily reward
-1. when time == 00:00:00
+1. when time == 00:00:00 and day not equal to sunday
 for a garbage can ID
 generate a random number and match this number to user ID present with respect to garbage can ID.
 allot 20 CC coins to this user ID and delete all user ID present in the garbage can table with respect to this garbage can ID.
