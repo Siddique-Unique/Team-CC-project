@@ -2,7 +2,7 @@ CREATION OF DATABASE:
 
 1. Create Database for all garbage can with this QR code and create a table for it along with User ID column.
 2. Create a new User ID for Every New User account and create a table for it along with Date.
-3. Create a percentage table  for garbage can and a column with title as percentage and a column with title as fault. 
+3. Create a percentage table for garbage can and seperate columns for percentages and a column with title as fault. 
 
 DATA UPDATION WHENEVER QR CODE SCANNED(PART 1):
 
@@ -25,14 +25,15 @@ fault: garbage can is already filled
 {collect the garbage can ID and the number from the options of the question}
 
 DATA UPDATION WHENEVER QR CODE SCANNED(PART 2):
-1. add the number from the option into the percentage column of the perecentage table
+1. Based on the option chosen add 1 to percentage column of the perecentage table
 2. add 1 to the fault column if fault option is chosen
 
 
 SENDING INFORMATION TO MUNICIPAL CORPORATION:
 
 CASES:
-1. WHEN the percentage column is greater than 2 send information to the municipal corporation that the garbage can is filled.
+1. WHEN the 100% percentage column is greater than 1 send information to the municipal corporation that the garbage can is filled.
+3. WHEN the less than 50, between 50 and 100 and 100 are greater than or equal to 1 then send the garbage can filled info to the municipal corporation.
 2. WHEN the fault column is greater than or equal to 1 reduce the daily reward by 5 and weekly reward by 20
 
 
